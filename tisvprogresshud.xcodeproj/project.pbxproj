@@ -22,6 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		24D35B67162DC8C70024D135 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D35B66162DC8C70024D135 /* UIKit.framework */; };
+		24D35B6A162DC8DC0024D135 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D35B69162DC8DC0024D135 /* QuartzCore.framework */; };
+		24D35B72162DD0CB0024D135 /* ComQnypTisvprogresshubView.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D35B70162DD0CB0024D135 /* ComQnypTisvprogresshubView.h */; };
+		24D35B73162DD0CB0024D135 /* ComQnypTisvprogresshubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D35B71162DD0CB0024D135 /* ComQnypTisvprogresshubView.m */; };
+		24D35B76162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */; };
+		24D35B77162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */; };
 		24DD6CF91134B3F500162E58 /* ComQnypTisvprogresshubModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */; };
 		24DD6CFA1134B3F500162E58 /* ComQnypTisvprogresshubModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h */; };
@@ -36,19 +42,30 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "tisvprogresshud";
+			remoteInfo = tisvprogresshud;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComQnypTisvprogresshubModule.h"; path = "Classes/ComQnypTisvprogresshubModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComQnypTisvprogresshubModule.m"; path = "Classes/ComQnypTisvprogresshubModule.m"; sourceTree = "<group>"; };
+		24D35B5E162DC5B20024D135 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		24D35B5F162DC5B20024D135 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		24D35B60162DC5B20024D135 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		24D35B66162DC8C70024D135 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24D35B68162DC8D40024D135 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
+		24D35B69162DC8DC0024D135 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		24D35B6B162DC8E50024D135 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
+		24D35B70162DD0CB0024D135 /* ComQnypTisvprogresshubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComQnypTisvprogresshubView.h; sourceTree = "<group>"; };
+		24D35B71162DD0CB0024D135 /* ComQnypTisvprogresshubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComQnypTisvprogresshubView.m; sourceTree = "<group>"; };
+		24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComQnypTisvprogresshubViewProxy.h; sourceTree = "<group>"; };
+		24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComQnypTisvprogresshubViewProxy.m; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComQnypTisvprogresshubModule.h; path = Classes/ComQnypTisvprogresshubModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComQnypTisvprogresshubModule.m; path = Classes/ComQnypTisvprogresshubModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComQnypTisvprogresshubModuleAssets.h"; path = "Classes/ComQnypTisvprogresshubModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComQnypTisvprogresshubModuleAssets.m"; path = "Classes/ComQnypTisvprogresshubModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* ComQnypTisvprogresshub_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComQnypTisvprogresshub_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComQnypTisvprogresshubModuleAssets.h; path = Classes/ComQnypTisvprogresshubModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComQnypTisvprogresshubModuleAssets.m; path = Classes/ComQnypTisvprogresshubModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComQnypTisvprogresshub_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComQnypTisvprogresshub_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libComQnypTisvprogresshub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libComQnypTisvprogresshub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libComQnypTisvprogresshub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComQnypTisvprogresshub.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D35B6A162DC8DC0024D135 /* QuartzCore.framework in Frameworks */,
+				24D35B67162DC8C70024D135 /* UIKit.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,17 +93,21 @@
 		0867D691FE84028FC02AAC07 /* tisvprogresshud */ = {
 			isa = PBXGroup;
 			children = (
+				24D35B69162DC8DC0024D135 /* QuartzCore.framework */,
+				24D35B66162DC8C70024D135 /* UIKit.framework */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "tisvprogresshud";
+			name = tisvprogresshud;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24D35B6B162DC8E50024D135 /* QuartzCore.framework */,
+				24D35B68162DC8D40024D135 /* UIKit.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -93,12 +116,27 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24D35B70162DD0CB0024D135 /* ComQnypTisvprogresshubView.h */,
+				24D35B71162DD0CB0024D135 /* ComQnypTisvprogresshubView.m */,
+				24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */,
+				24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */,
 				24DE9E0F11C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */,
 				24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */,
+				24D35B5D162DC5B20024D135 /* SVProgressHUD */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		24D35B5D162DC5B20024D135 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				24D35B5E162DC5B20024D135 /* SVProgressHUD.bundle */,
+				24D35B5F162DC5B20024D135 /* SVProgressHUD.h */,
+				24D35B60162DC5B20024D135 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -120,6 +158,8 @@
 				AA747D9F0F9514B9006C5449 /* ComQnypTisvprogresshub_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComQnypTisvprogresshubModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h in Headers */,
+				24D35B72162DD0CB0024D135 /* ComQnypTisvprogresshubView.h in Headers */,
+				24D35B76162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +178,8 @@
 			);
 			dependencies = (
 			);
-			name = "tisvprogresshud";
-			productName = "tisvprogresshud";
+			name = tisvprogresshud;
+			productName = tisvprogresshud;
 			productReference = D2AAC07E0554694100DB518D /* libComQnypTisvprogresshub.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -192,6 +232,8 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* ComQnypTisvprogresshubModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.m in Sources */,
+				24D35B73162DD0CB0024D135 /* ComQnypTisvprogresshubView.m in Sources */,
+				24D35B77162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +263,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComQnypTisvprogresshub.dst";
+				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComQnypTisvprogresshub_Prefix.pch";
+				GCC_PREFIX_HEADER = ComQnypTisvprogresshub_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -244,7 +286,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComQnypTisvprogresshub";
+				PRODUCT_NAME = ComQnypTisvprogresshub;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -267,11 +309,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/ComQnypTisvprogresshub.dst";
+				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComQnypTisvprogresshub_Prefix.pch";
+				GCC_PREFIX_HEADER = ComQnypTisvprogresshub_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -288,7 +330,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComQnypTisvprogresshub";
+				PRODUCT_NAME = ComQnypTisvprogresshub;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -310,11 +352,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComQnypTisvprogresshub.dst";
+				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComQnypTisvprogresshub_Prefix.pch";
+				GCC_PREFIX_HEADER = ComQnypTisvprogresshub_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -332,7 +374,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComQnypTisvprogresshub";
+				PRODUCT_NAME = ComQnypTisvprogresshub;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -355,11 +397,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/ComQnypTisvprogresshub.dst";
+				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComQnypTisvprogresshub_Prefix.pch";
+				GCC_PREFIX_HEADER = ComQnypTisvprogresshub_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -375,7 +417,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComQnypTisvprogresshub";
+				PRODUCT_NAME = ComQnypTisvprogresshub;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
