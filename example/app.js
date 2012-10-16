@@ -15,6 +15,16 @@ win.open();
 // TODO: write your module tests here
 var tisvprogresshud = require('com.qnyp.tisvprogresshub');
 Ti.API.info("module is => " + tisvprogresshud);
+Ti.API.debug(tisvprogresshud);
+
+var foo = tisvprogresshud.createView({
+  "color":"red",
+  "width":20,
+  "height":20
+});
+win.add(foo);
+Ti.API.debug(foo);
+
 
 label.text = tisvprogresshud.example();
 
