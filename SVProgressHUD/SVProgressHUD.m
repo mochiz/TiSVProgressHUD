@@ -44,6 +44,16 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
++(NSString*)moduleId
+{
+	return @"com.qnyp.tisvprogresshub";
+}
+
++(NSString*)imagePath:(NSString*)name
+{
+    NSString *path = [NSString stringWithFormat:@"modules/%@/%@.png", [self moduleId], name];
+    return path;
+}
 
 + (SVProgressHUD*)sharedView {
     static dispatch_once_t once;
@@ -51,6 +61,7 @@
     dispatch_once(&once, ^ { sharedView = [[SVProgressHUD alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; });
     return sharedView;
 }
+
 
 
 + (void)setStatus:(NSString *)string {
@@ -78,21 +89,21 @@
 #pragma mark - Show then dismiss methods
 
 + (void)showSuccessWithStatus:(NSString *)string {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/success.png"] status:string];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"modules/com.qnyp.tisvprogresshub/success.png"] status:string];
 }
 
 + (void)showSuccessWithStatus:(NSString *)string duration:(NSTimeInterval)duration {
     [SVProgressHUD show];
-    [SVProgressHUD showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/success.png"] status:string];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"modules/com.qnyp.tisvprogresshub/success.png"] status:string];
 }
 
 + (void)showErrorWithStatus:(NSString *)string {
-    [SVProgressHUD showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/error.png"] status:string];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"modules/com.qnyp.tisvprogresshub/error.png"] status:string];
 }
 
 + (void)showErrorWithStatus:(NSString *)string duration:(NSTimeInterval)duration {
     [SVProgressHUD show];
-    [SVProgressHUD showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/error.png"] status:string];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"modules/com.qnyp.tisvprogresshub/error.png"] status:string];
 }
 
 + (void)showImage:(UIImage *)image status:(NSString *)string {
@@ -110,18 +121,9 @@
 	[SVProgressHUD showSuccessWithStatus:string];
 }
 
-+ (void)dismissWithSuccess:(NSString *)string afterDelay:(NSTimeInterval)seconds {
-    [[SVProgressHUD sharedView] showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/success.png"] status:string duration:seconds];
-}
-
 + (void)dismissWithError:(NSString*)string {
 	[SVProgressHUD showErrorWithStatus:string];
 }
-
-+ (void)dismissWithError:(NSString *)string afterDelay:(NSTimeInterval)seconds {
-    [[SVProgressHUD sharedView] showImage:[UIImage imageNamed:@"SVProgressHUD.bundle/error.png"] status:string duration:seconds];
-}
-
 
 #pragma mark - Instance Methods
 
@@ -341,7 +343,6 @@
 - (void)showWithStatus:(NSString*)string maskType:(SVProgressHUDMaskType)hudMaskType networkIndicator:(BOOL)show {
     if(!self.superview)
         [self.overlayWindow addSubview:self];
-    
     self.fadeOutTimer = nil;
     self.imageView.hidden = YES;
     self.maskType = hudMaskType;
@@ -384,19 +385,41 @@
 
 
 - (void)showImage:(UIImage *)image status:(NSString *)string duration:(NSTimeInterval)duration {
-    if(![SVProgressHUD isVisible])
+    NSLog(@"showImage=========================");
+    if(![SVProgressHUD isVisible]) {
         [SVProgressHUD show];
-    
+    }
+    NSLog(@"%@", image);
+    // オーバーレイウィンドウを表示
+    self.overlayWindow.hidden = NO;
     self.imageView.image = image;
     self.imageView.hidden = NO;
+    NSLog(@"self.imageView:%@", self.imageView);
+    NSLog(@"self.imageView.hidden:%c", self.imageView.hidden);
     [self setStatus:string];
     [self.spinnerView stopAnimating];
-    
-    self.fadeOutTimer = [NSTimer timerWithTimeInterval:duration target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
-    [[NSRunLoop mainRunLoop] addTimer:self.fadeOutTimer forMode:NSRunLoopCommonModes];
+    [self delaiedDismiss];
+//    self.fadeOutTimer = [NSTimer timerWithTimeInterval:duration target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
+//    [[NSRunLoop mainRunLoop] addTimer:self.fadeOutTimer forMode:NSRunLoopCommonModes];
+
 }
 
-
+- (void)delaiedDismiss {
+    [UIView animateWithDuration:0.15
+                          delay:1
+                        options:UIViewAnimationCurveEaseIn | UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         self.hudView.transform = CGAffineTransformScale(self.hudView.transform, 0.8, 0.8);
+                         self.alpha = 0;
+                     }
+                     completion:^(BOOL finished){
+                         if(self.alpha == 0) {
+                             // オーバーレイウィンドウを非表示
+                             self.overlayWindow.hidden = YES;
+                             UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
+                         }
+                     }];
+}
 - (void)dismiss {
     [UIView animateWithDuration:0.15
                           delay:0
@@ -407,12 +430,14 @@
                      }
                      completion:^(BOOL finished){
                          if(self.alpha == 0) {
-                             [[NSNotificationCenter defaultCenter] removeObserver:self];
-                             [hudView removeFromSuperview];
-                             hudView = nil;
+                             // オーバーレイウィンドウを非表示
+                             self.overlayWindow.hidden = YES;
+//                             [[NSNotificationCenter defaultCenter] removeObserver:self];
+//                             [hudView removeFromSuperview];
+//                             hudView = nil;
                              
-                             [overlayWindow removeFromSuperview];
-                             overlayWindow = nil;
+//                             [overlayWindow removeFromSuperview];
+//                             overlayWindow = nil;
 
                              UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
 
@@ -437,6 +462,7 @@
         overlayWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         overlayWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         overlayWindow.backgroundColor = [UIColor clearColor];
+//        overlayWindow.backgroundColor = [UIColor redColor];
         overlayWindow.userInteractionEnabled = NO;
     }
     return overlayWindow;
@@ -452,6 +478,7 @@
         
         [self addSubview:hudView];
     }
+//    NSLog(@"hudView:%@", hudView);
     return hudView;
 }
 

@@ -44,10 +44,10 @@ typedef NSUInteger SVProgressHUDMaskType;
 + (void)showErrorWithStatus:(NSString *)string duration:(NSTimeInterval)duration DEPRECATED_ATTRIBUTE;
 
 // deprecated June 9th; use the showWithSuccess/Error methods instead
-+ (void)dismissWithSuccess:(NSString*)successString DEPRECATED_ATTRIBUTE; 
-+ (void)dismissWithSuccess:(NSString*)successString afterDelay:(NSTimeInterval)seconds DEPRECATED_ATTRIBUTE;
-+ (void)dismissWithError:(NSString*)errorString DEPRECATED_ATTRIBUTE;
-+ (void)dismissWithError:(NSString*)errorString afterDelay:(NSTimeInterval)seconds DEPRECATED_ATTRIBUTE;
++ (void)dismissWithSuccess:(NSString*)successString;
+//+ (void)dismissWithSuccess:(NSString*)successString afterDelay:(NSTimeInterval)seconds DEPRECATED_ATTRIBUTE;
++ (void)dismissWithError:(NSString*)errorString;
+//+ (void)dismissWithError:(NSString*)errorString afterDelay:(NSTimeInterval)seconds DEPRECATED_ATTRIBUTE;
 
 
 @end
