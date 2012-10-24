@@ -29,7 +29,7 @@
 		24D35B76162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */; };
 		24D35B77162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */; };
 		24D35B78162E56650024D135 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D35B5F162DC5B20024D135 /* SVProgressHUD.h */; };
-		24D35B79162E566A0024D135 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D35B60162DC5B20024D135 /* SVProgressHUD.m */; };
+		24D35B79162E566A0024D135 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D35B60162DC5B20024D135 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		24DD6CF91134B3F500162E58 /* ComQnypTisvprogresshubModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */; };
 		24DD6CFA1134B3F500162E58 /* ComQnypTisvprogresshubModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComQnypTisvprogresshubModuleAssets.h */; };

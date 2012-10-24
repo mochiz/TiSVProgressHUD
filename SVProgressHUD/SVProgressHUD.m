@@ -107,7 +107,7 @@
 }
 
 + (void)showImage:(UIImage *)image status:(NSString *)string {
-    [[SVProgressHUD sharedView] showImage:image status:string duration:1.0];
+    [[SVProgressHUD sharedView] showImage:image status:string duration:1.5];
 }
 
 
@@ -398,9 +398,9 @@
     NSLog(@"self.imageView.hidden:%c", self.imageView.hidden);
     [self setStatus:string];
     [self.spinnerView stopAnimating];
-    [self delaiedDismiss];
-//    self.fadeOutTimer = [NSTimer timerWithTimeInterval:duration target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
-//    [[NSRunLoop mainRunLoop] addTimer:self.fadeOutTimer forMode:NSRunLoopCommonModes];
+//    [self delaiedDismiss];
+    self.fadeOutTimer = [NSTimer timerWithTimeInterval:duration target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
+    [[NSRunLoop mainRunLoop] addTimer:self.fadeOutTimer forMode:NSRunLoopCommonModes];
 
 }
 
@@ -430,15 +430,12 @@
                      }
                      completion:^(BOOL finished){
                          if(self.alpha == 0) {
-                             // オーバーレイウィンドウを非表示
-                             self.overlayWindow.hidden = YES;
-                             // TODO: Titaniumだとアプリが落ちてしまう
-//                             [[NSNotificationCenter defaultCenter] removeObserver:self];
-//                             [hudView removeFromSuperview];
-//                             hudView = nil;
+                             [[NSNotificationCenter defaultCenter] removeObserver:self];
+                             [hudView removeFromSuperview];
+                             hudView = nil;
                              
-//                             [overlayWindow removeFromSuperview];
-//                             overlayWindow = nil;
+                             [overlayWindow removeFromSuperview];
+                             overlayWindow = nil;
 
                              UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
 
