@@ -432,6 +432,7 @@
                          if(self.alpha == 0) {
                              // オーバーレイウィンドウを非表示
                              self.overlayWindow.hidden = YES;
+                             // TODO: Titaniumだとアプリが落ちてしまう
 //                             [[NSNotificationCenter defaultCenter] removeObserver:self];
 //                             [hudView removeFromSuperview];
 //                             hudView = nil;

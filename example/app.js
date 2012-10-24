@@ -81,10 +81,10 @@ var button41 = Ti.UI.createButton({title:'dismiss', width: Ti.UI.SIZE, height: T
 button41.addEventListener('click', function(){ progress.dismiss(); });
 container.add(button41);
 
-var button42 = Ti.UI.createButton({title:'dismissWithSuccess', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
+var button42 = Ti.UI.createButton({title:'dismiss with success', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
 button42.addEventListener('click', function(){ progress.dismissWithSuccess({status:'Success!'}); });
 container.add(button42);
 
-var button43 = Ti.UI.createButton({title:'dismissWithSuccess', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
+var button43 = Ti.UI.createButton({title:'dismiss with error', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
 button43.addEventListener('click', function(){ progress.dismissWithError({status:'Error!'}); });
 container.add(button43);
