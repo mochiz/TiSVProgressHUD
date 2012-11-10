@@ -3,3 +3,11 @@ bin
 build
 *.zip
 *.framework
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+tmp
+bin
+build
+.DS_Store
+modules
+.settings
