@@ -51,7 +51,7 @@ container.add(button2);
 // show status with mask
 var button3 = Ti.UI.createButton({title:'show with status and masktype black', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
 button3.addEventListener('click', function(){
-  progress.showWithStatus({status:'Success!', maskType:'3'});
+  progress.showWithStatus({status:'Loading...', maskType:'3'});
   setTimeout(function() {
     progress.dismiss();
   }, 2000);
@@ -60,7 +60,7 @@ container.add(button3);
 
 var button4 = Ti.UI.createButton({title:'show with status and masktype gradient', width: Ti.UI.SIZE, height: Ti.UI.SIZE, top:10, bottom:10});
 button4.addEventListener('click', function(){
-  progress.showWithStatus({status:'Success!', maskType:'4'});
+  progress.showWithStatus({status:'Loading...', maskType:'4'});
   setTimeout(function() {
     progress.dismiss();
   }, 2000);

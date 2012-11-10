@@ -53,13 +53,11 @@
 		24D35B5F162DC5B20024D135 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		24D35B60162DC5B20024D135 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		24D35B66162DC8C70024D135 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		24D35B68162DC8D40024D135 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
 		24D35B69162DC8DC0024D135 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		24D35B6B162DC8E50024D135 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
-		24D35B70162DD0CB0024D135 /* ComQnypTisvprogresshubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComQnypTisvprogresshubView.h; sourceTree = "<group>"; };
-		24D35B71162DD0CB0024D135 /* ComQnypTisvprogresshubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComQnypTisvprogresshubView.m; sourceTree = "<group>"; };
-		24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComQnypTisvprogresshubViewProxy.h; sourceTree = "<group>"; };
-		24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComQnypTisvprogresshubViewProxy.m; sourceTree = "<group>"; };
+		24D35B70162DD0CB0024D135 /* ComQnypTisvprogresshubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComQnypTisvprogresshubView.h; path = Classes/ComQnypTisvprogresshubView.h; sourceTree = "<group>"; };
+		24D35B71162DD0CB0024D135 /* ComQnypTisvprogresshubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComQnypTisvprogresshubView.m; path = Classes/ComQnypTisvprogresshubView.m; sourceTree = "<group>"; };
+		24D35B74162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComQnypTisvprogresshubViewProxy.h; path = Classes/ComQnypTisvprogresshubViewProxy.h; sourceTree = "<group>"; };
+		24D35B75162DD1630024D135 /* ComQnypTisvprogresshubViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComQnypTisvprogresshubViewProxy.m; path = Classes/ComQnypTisvprogresshubViewProxy.m; sourceTree = "<group>"; };
 		24DD6CF71134B3F500162E58 /* ComQnypTisvprogresshubModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComQnypTisvprogresshubModule.h; path = Classes/ComQnypTisvprogresshubModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* ComQnypTisvprogresshubModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComQnypTisvprogresshubModule.m; path = Classes/ComQnypTisvprogresshubModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
@@ -95,8 +93,6 @@
 		0867D691FE84028FC02AAC07 /* tisvprogresshud */ = {
 			isa = PBXGroup;
 			children = (
-				24D35B69162DC8DC0024D135 /* QuartzCore.framework */,
-				24D35B66162DC8C70024D135 /* UIKit.framework */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -108,8 +104,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24D35B6B162DC8E50024D135 /* QuartzCore.framework */,
-				24D35B68162DC8D40024D135 /* UIKit.framework */,
+				24D35B69162DC8DC0024D135 /* QuartzCore.framework */,
+				24D35B66162DC8C70024D135 /* UIKit.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
