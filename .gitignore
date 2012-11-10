@@ -3,3 +3,11 @@ bin
 build
 *.zip
 *.framework
+project.xcworkspace
+xcuserdata
+tmp
+bin
+build
+*.zip
+.DS_Store
+modules
