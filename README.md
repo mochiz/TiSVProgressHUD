@@ -3,11 +3,8 @@ TiSVProgressHUD module
 Titanium Mobile Module project for [SVProgressHUD](https://github.com/samvermette/SVProgressHUD)
 
 
-![show](https://github.com/downloads/mochiz/TiSVProgressHUD/show.png)
-![showWithStatus](https://github.com/downloads/mochiz/TiSVProgressHUD/showWithStatus.png)
-![showWithStatusWithMask](https://github.com/downloads/mochiz/TiSVProgressHUD/showWithStatusWithMask.png)
-![dismissWithSuccess](https://github.com/downloads/mochiz/TiSVProgressHUD/dismissWithSuccess.png)
-![dismissWithError](https://github.com/downloads/mochiz/TiSVProgressHUD/dismissWithError.png)
+![example](https://github.com/downloads/mochiz/TiSVProgressHUD/example.png)
+
 
 INSTALL MODULE
 --------------------
@@ -47,7 +44,7 @@ show SVProgressHUD
 ```
 progress.show();
 progress.showWithStatus({status: 'loading...'});
-progress.showWithStatus({status: 'loading...', maskType: '1'});
+progress.showWithStatus({status: 'loading...', maskType: '4'});
 ```
 
 maskType property
