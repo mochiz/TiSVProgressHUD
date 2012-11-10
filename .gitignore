@@ -3,11 +3,11 @@ bin
 build
 *.zip
 *.framework
-project.xcworkspace
-xcuserdata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
 tmp
 bin
 build
-*.zip
 .DS_Store
 modules
+.settings
