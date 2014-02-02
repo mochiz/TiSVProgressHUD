@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24D35B5E162DC5B20024D135 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		24D35B5F162DC5B20024D135 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		24D35B60162DC5B20024D135 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		24D35B66162DC8C70024D135 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -130,7 +129,6 @@
 		24D35B5D162DC5B20024D135 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				24D35B5E162DC5B20024D135 /* SVProgressHUD.bundle */,
 				24D35B5F162DC5B20024D135 /* SVProgressHUD.h */,
 				24D35B60162DC5B20024D135 /* SVProgressHUD.m */,
 			);
@@ -259,8 +257,8 @@
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keigo AOKI (CD96PSWKCL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keigo AOKI (CD96PSWKCL)";
 				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -286,8 +284,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComQnypTisvprogresshub;
-				PROVISIONING_PROFILE = "218FC5A6-5128-4FC9-8060-055233209C39";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "218FC5A6-5128-4FC9-8060-055233209C39";
+				PROVISIONING_PROFILE = "057A5E9E-A1D5-47F8-888D-2C97614C9367";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "057A5E9E-A1D5-47F8-888D-2C97614C9367";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				TITANIUM_SDK = "~/Library/Application Support/Titanium/mobilesdk/osx/$(TITANIUM_SDK_VERSION)";
@@ -304,6 +302,7 @@
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
 				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keigo AOKI (CD96PSWKCL)";
 				DSTROOT = /tmp/ComQnypTisvprogresshub.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
@@ -327,7 +326,7 @@
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ComQnypTisvprogresshub;
-				PROVISIONING_PROFILE = "218FC5A6-5128-4FC9-8060-055233209C39";
+				PROVISIONING_PROFILE = "057A5E9E-A1D5-47F8-888D-2C97614C9367";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				TITANIUM_SDK = "~/Library/Application Support/Titanium/mobilesdk/osx/$(TITANIUM_SDK_VERSION)";
